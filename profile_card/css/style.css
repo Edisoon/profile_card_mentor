@@ -1,0 +1,82 @@
+:root{
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkBlue: hsl(229, 23%, 23%);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%)
+    --black: #000000;
+    --white: #ffffff;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--darkCyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: var(--white);
+    height: 29rem;
+    width: 32rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.card__top{
+    height: 10rem;
+    width: 100%;
+    background-image: url(../images/bg-pattern-card.svg);
+}
+.card__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.342);
+    /* justify-content: center; */
+}
+.card__image{
+    background-image: url(../images/image-victor.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid white;
+    margin-top: calc(-40px - 5px);
+    border-radius: 50%;
+    height: 8.5rem;
+    width: 8.5rem;
+}
+.card__title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 2rem 0 0.8rem 0;
+}
+.card__title span,
+.card__info,
+.social__description{
+    font-weight: 400;
+    color: gray
+}
+.card__info{
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
+}
+.card__footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+.social__numbers{
+    font-size: 1.8rem;
+    margin: 0.3rem 0;
+    text-align: center;
+}
+.social__description{
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
